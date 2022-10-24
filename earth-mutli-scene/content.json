@@ -1,0 +1,582 @@
+{
+    "version": 7,
+    "rootComponentId": "d2_root_v1",
+    "componentsById": {
+        "d2_root_v1": {
+            "type": "Root",
+            "children": [
+                "b745becf65034dde8a4690f523af5d0d",
+                "ba2e18dc-9143-4ab3-b1a8-1e760ed7858a",
+                "39d55398-d435-4420-9344-91d090890f45"
+            ]
+        },
+        "b745becf65034dde8a4690f523af5d0d": {
+            "type": "Scene",
+            "trackingType": "world",
+            "children": [
+                "36991f7b-90c7-4a7d-bcf0-ce71cd858952",
+                "f3f8837e-96ab-4de7-a16d-d9d1990ac2fa",
+                "c7b2cbfc-fa11-4203-9c28-1c2dc7d35f95"
+            ],
+            "showSnapshotUi": false,
+            "title": "Mars"
+        },
+        "36991f7b-90c7-4a7d-bcf0-ce71cd858952": {
+            "type": "Model3d",
+            "id": "36991f7b-90c7-4a7d-bcf0-ce71cd858952",
+            "scale": [
+                0.9999993741512299,
+                1,
+                0.999999076128006
+            ],
+            "position": [
+                0,
+                1,
+                0
+            ],
+            "dimensions": [
+                1.9999987483024597,
+                2,
+                1.999998152256012
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "title": "mars.glb",
+            "aspectRatioLocked": true,
+            "isLocked": false,
+            "isHidden": false,
+            "scalesInverted": [
+                false,
+                false
+            ],
+            "model3dUrl": "./3dmodel/stg3-8b60a20e4ff24a3591ee4389701d9c7f/model.glb",
+            "thumbnailUrl": "./3dmodel/stg3-8b60a20e4ff24a3591ee4389701d9c7f/frame0.png",
+            "zmlFileId": "cca2a703-a783-4311-b806-3e5d8a16d731",
+            "isAnimated": true,
+            "idleAnimation": "SphereAction.001",
+            "actions": {
+                "onTap": [
+                    {
+                        "type": "linkScene",
+                        "sceneId": "ba2e18dc-9143-4ab3-b1a8-1e760ed7858a"
+                    }
+                ]
+            }
+        },
+        "ba2e18dc-9143-4ab3-b1a8-1e760ed7858a": {
+            "type": "Scene",
+            "title": "Earth",
+            "trackingType": "world",
+            "children": [
+                "b19e7e6f-2eaf-425f-9ab9-3b91e29f471a",
+                "d0d144ad-574c-4f36-8f4e-42eedb2737b9",
+                "92dbcfa5-ee2d-4efb-8a35-9e101cbd8109"
+            ]
+        },
+        "b19e7e6f-2eaf-425f-9ab9-3b91e29f471a": {
+            "type": "Model3d",
+            "id": "b19e7e6f-2eaf-425f-9ab9-3b91e29f471a",
+            "scale": [
+                0.9999993741512299,
+                1,
+                0.999999076128006
+            ],
+            "position": [
+                0.17532866156341154,
+                1,
+                0
+            ],
+            "dimensions": [
+                256,
+                192
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "title": "earth.glb",
+            "aspectRatioLocked": true,
+            "isLocked": false,
+            "isHidden": false,
+            "scalesInverted": [
+                false,
+                false
+            ],
+            "model3dUrl": "./3dmodel/stg3-79bd14eca7ae44c0ad4bb70085c3b00b/model.glb",
+            "thumbnailUrl": "./3dmodel/stg3-79bd14eca7ae44c0ad4bb70085c3b00b/frame0.png",
+            "zmlFileId": "26d7628d-0921-4ba6-823c-9a09c55db6d5",
+            "isAnimated": true,
+            "clickOffset": [
+                166,
+                60
+            ],
+            "idleAnimation": "SphereAction",
+            "actions": {
+                "onTap": [
+                    {
+                        "type": "linkScene",
+                        "sceneId": "b745becf65034dde8a4690f523af5d0d"
+                    }
+                ]
+            }
+        },
+        "39d55398-d435-4420-9344-91d090890f45": {
+            "type": "Scene",
+            "title": "Video",
+            "trackingType": "world",
+            "children": [
+                "7ed2b43a-b23b-44a1-922a-1e5f28c37d1d",
+                "e282bc61-05d2-4fef-afc0-ab449cb57add",
+                "03d2816e-5a2c-40dc-8792-b41d7ca1b581"
+            ]
+        },
+        "7ed2b43a-b23b-44a1-922a-1e5f28c37d1d": {
+            "type": "Video",
+            "id": "7ed2b43a-b23b-44a1-922a-1e5f28c37d1d",
+            "position": [
+                0.2276802841423548,
+                0.84375,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1.5,
+                0.84375,
+                0
+            ],
+            "title": "Solar_System_compressed.mov",
+            "aspectRatioLocked": true,
+            "isLocked": false,
+            "isHidden": false,
+            "videoUrl": "./hls/3-fbf681d16c2144ceb0f42f27e05d03d0/auto.m3u8",
+            "mp4Url": "./hls/3-fbf681d16c2144ceb0f42f27e05d03d0/video.mp4",
+            "scalesInverted": [
+                false,
+                false
+            ],
+            "hasAlpha": false,
+            "thumbnailUrl": "./hls/3-fbf681d16c2144ceb0f42f27e05d03d0/frame0.png",
+            "zmlFileId": "0a80177a-b4e0-4d51-9492-c0860ed7962d",
+            "dimensions": [
+                250,
+                140.625
+            ],
+            "clickOffset": [
+                170,
+                24.3125
+            ],
+            "autoplay": true
+        },
+        "f3f8837e-96ab-4de7-a16d-d9d1990ac2fa": {
+            "type": "Button",
+            "id": "f3f8837e-96ab-4de7-a16d-d9d1990ac2fa",
+            "position": [
+                -1.397502905391099,
+                2.5174434624233974,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.37,
+                0.13,
+                0
+            ],
+            "title": "Earth scene button",
+            "aspectRatioLocked": true,
+            "isLocked": false,
+            "isHidden": false,
+            "scalesInverted": [
+                false,
+                false
+            ],
+            "fontRgba": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "fontFamily": "Roboto",
+            "fontSize": 0.11,
+            "text": "Earth scene",
+            "color": [
+                150,
+                191,
+                239,
+                1
+            ],
+            "borderRadius": 0,
+            "borderRgba": [
+                52,
+                75,
+                96,
+                1
+            ],
+            "borderWidth": 0,
+            "textAlignment": "center",
+            "dimensions": [
+                100,
+                36
+            ],
+            "clickOffset": [
+                110,
+                -29
+            ],
+            "actions": {
+                "onTap": [
+                    {
+                        "type": "linkScene",
+                        "sceneId": "ba2e18dc-9143-4ab3-b1a8-1e760ed7858a"
+                    }
+                ]
+            }
+        },
+        "c7b2cbfc-fa11-4203-9c28-1c2dc7d35f95": {
+            "type": "Button",
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.37,
+                0.13,
+                0
+            ],
+            "title": "Video scene button",
+            "aspectRatioLocked": true,
+            "isLocked": false,
+            "isHidden": false,
+            "scalesInverted": [
+                false,
+                false
+            ],
+            "fontRgba": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "fontFamily": "Roboto",
+            "fontSize": 0.11,
+            "text": "Video scene",
+            "color": [
+                150,
+                191,
+                239,
+                1
+            ],
+            "borderRadius": 0,
+            "borderRgba": [
+                52,
+                75,
+                96,
+                1
+            ],
+            "borderWidth": 0,
+            "textAlignment": "center",
+            "dimensions": [
+                100,
+                36
+            ],
+            "clickOffset": [
+                110,
+                -29
+            ],
+            "position": [
+                1.0430283126870434,
+                2.4674434624233976,
+                0
+            ],
+            "id": "c7b2cbfc-fa11-4203-9c28-1c2dc7d35f95",
+            "actions": {
+                "onTap": [
+                    {
+                        "type": "linkScene",
+                        "sceneId": "39d55398-d435-4420-9344-91d090890f45"
+                    }
+                ]
+            }
+        },
+        "d0d144ad-574c-4f36-8f4e-42eedb2737b9": {
+            "type": "Button",
+            "id": "d0d144ad-574c-4f36-8f4e-42eedb2737b9",
+            "position": [
+                -0.6701001075633712,
+                2.5745544610882094,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.37,
+                0.13,
+                0
+            ],
+            "title": "Mars",
+            "aspectRatioLocked": true,
+            "isLocked": false,
+            "isHidden": false,
+            "scalesInverted": [
+                false,
+                false
+            ],
+            "fontRgba": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "fontFamily": "Roboto",
+            "fontSize": 0.11,
+            "text": "Mars",
+            "color": [
+                150,
+                191,
+                239,
+                1
+            ],
+            "borderRadius": 0,
+            "borderRgba": [
+                52,
+                75,
+                96,
+                1
+            ],
+            "borderWidth": 0,
+            "textAlignment": "center",
+            "dimensions": [
+                100,
+                36
+            ],
+            "clickOffset": [
+                101,
+                -37
+            ],
+            "actions": {
+                "onTap": [
+                    {
+                        "type": "linkScene",
+                        "sceneId": "b745becf65034dde8a4690f523af5d0d"
+                    }
+                ]
+            }
+        },
+        "92dbcfa5-ee2d-4efb-8a35-9e101cbd8109": {
+            "type": "Button",
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.37,
+                0.13,
+                0
+            ],
+            "title": "Mars",
+            "aspectRatioLocked": true,
+            "isLocked": false,
+            "isHidden": false,
+            "scalesInverted": [
+                false,
+                false
+            ],
+            "fontRgba": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "fontFamily": "Roboto",
+            "fontSize": 0.11,
+            "text": "Video",
+            "color": [
+                150,
+                191,
+                239,
+                1
+            ],
+            "borderRadius": 0,
+            "borderRgba": [
+                52,
+                75,
+                96,
+                1
+            ],
+            "borderWidth": 0,
+            "textAlignment": "center",
+            "dimensions": [
+                100,
+                36
+            ],
+            "clickOffset": [
+                101,
+                -37
+            ],
+            "actions": {
+                "onTap": [
+                    {
+                        "type": "linkScene",
+                        "sceneId": "39d55398-d435-4420-9344-91d090890f45"
+                    }
+                ]
+            },
+            "position": [
+                1.0625554222773421,
+                2.5245544610882096,
+                0
+            ],
+            "id": "92dbcfa5-ee2d-4efb-8a35-9e101cbd8109"
+        },
+        "e282bc61-05d2-4fef-afc0-ab449cb57add": {
+            "type": "Button",
+            "id": "e282bc61-05d2-4fef-afc0-ab449cb57add",
+            "position": [
+                -0.7645037136726903,
+                2.9112431402420498,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.37,
+                0.13,
+                0
+            ],
+            "title": "Mars",
+            "aspectRatioLocked": true,
+            "isLocked": false,
+            "isHidden": false,
+            "scalesInverted": [
+                false,
+                false
+            ],
+            "fontRgba": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "fontFamily": "Roboto",
+            "fontSize": 0.11,
+            "text": "Mars",
+            "color": [
+                150,
+                191,
+                239,
+                1
+            ],
+            "borderRadius": 0,
+            "borderRgba": [
+                52,
+                75,
+                96,
+                1
+            ],
+            "borderWidth": 0,
+            "textAlignment": "center",
+            "dimensions": [
+                100,
+                36
+            ],
+            "clickOffset": [
+                104,
+                -38
+            ],
+            "actions": {
+                "onTap": [
+                    {
+                        "type": "linkScene",
+                        "sceneId": "b745becf65034dde8a4690f523af5d0d"
+                    }
+                ]
+            }
+        },
+        "03d2816e-5a2c-40dc-8792-b41d7ca1b581": {
+            "type": "Button",
+            "id": "03d2816e-5a2c-40dc-8792-b41d7ca1b581",
+            "position": [
+                0.8991572541453194,
+                2.944579657492466,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.37,
+                0.13,
+                0
+            ],
+            "title": "Earth",
+            "aspectRatioLocked": true,
+            "isLocked": false,
+            "isHidden": false,
+            "scalesInverted": [
+                false,
+                false
+            ],
+            "fontRgba": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "fontFamily": "Roboto",
+            "fontSize": 0.11,
+            "text": "Earth",
+            "color": [
+                150,
+                191,
+                239,
+                1
+            ],
+            "borderRadius": 0,
+            "borderRgba": [
+                52,
+                75,
+                96,
+                1
+            ],
+            "borderWidth": 0,
+            "textAlignment": "center",
+            "dimensions": [
+                100,
+                36
+            ],
+            "clickOffset": [
+                130,
+                -30
+            ],
+            "actions": {
+                "onTap": [
+                    {
+                        "type": "linkScene",
+                        "sceneId": "ba2e18dc-9143-4ab3-b1a8-1e760ed7858a"
+                    }
+                ]
+            }
+        }
+    },
+    "juteVersion": "16.3"
+}

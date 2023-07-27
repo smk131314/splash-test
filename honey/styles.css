@@ -83,16 +83,16 @@ button {
   position: absolute;
   top: calc(-1 * var(--margin));
   right: calc(-1 * var(--margin));
-  width: 299px;
-  height: 269px;
+  width: 222px;
+  height: 200px;
   background: center / cover no-repeat url('./assets/img/background-top.png');
 }
 .bg-image-bottom {
   position: absolute;
   bottom: calc(-1 * var(--margin));
   left: calc(-1 * var(--margin));
-  width: 166px;
-  height: 345px;
+  width: 138px;
+  height: 286px;
   background: center / cover no-repeat url('./assets/img/background-bottom.png');
 }
 

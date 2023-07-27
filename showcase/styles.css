@@ -12,15 +12,11 @@ button {
   outline: none;
   border: none;
   cursor: pointer;
-  color: white;
 }
 
 :root {
-  --margin: 16px;
-  --border-width: 2px;
-  --bg-color: #FEF4EA;
-  --text-color: #6C1710;
-  --border-color: #A70011;
+  --text-color: white;
+  --btn-text-color: #073158;
 }
 
 /* This is style rule for the container of the contents */
@@ -33,19 +29,15 @@ button {
   z-index: 100;
   color: var(--text-color);
   /* you can modify the background here */
-  background: var(--bg-color);
+  background: 30% 0 / auto 100% no-repeat url('./assets/svg/background.svg');
 }
 .inner-wrapper {
-  width: calc(100% - (2*var(--margin)) - (2*var(--border-width)));
-  height: calc(100% - (2*var(--margin)) - (2*var(--border-width)));
-  margin: var(--margin);
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
-  outline: 5px solid var(--border-color);
-  outline-offset: 3px;
-  border: var(--border-width) solid var(--border-color);
   position: relative;
 }
 
@@ -53,19 +45,21 @@ button {
 .inner-wrapper::after {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 66px;
 }
 .inner-wrapper::before {
-  top: 0;
-  left: 0;
-  background: right / contain no-repeat url('./assets/img/corner-right.png'), left / contain no-repeat url('./assets/img/corner-left.png');
+  top: 86px;
+  right: -38px;
+  width: 200px;
+  height: 210px;
+  background: center / contain no-repeat url('./assets/img/bg-top.png');
 }
 .inner-wrapper::after {
-  bottom: 0;
-  left: 0;
-  background: right / contain no-repeat url('./assets/img/corner-right.png'), left / contain no-repeat url('./assets/img/corner-left.png');
-  transform: rotate(180deg);
+  bottom: 44px;
+  left: -70px;
+  width: 276px;
+  height: 297px;
+  background: center / contain no-repeat url('./assets/img/bg-bottom.png');
+  
 }
 /* This is style rule for the button container */
 .launch-button-container {
@@ -76,30 +70,32 @@ button {
   flex: 1;
 }
 #launch-button-text {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#launch-button-text > img {
-  max-width: 393px;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+#launch-button-text > p {
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 84.5%; /* 27.04px */
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
 #launch-button {
   display: flex;
-  padding: 12px 40px;
-  align-items: flex-start;
+  padding: 11px 23px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
   background: var(--text-color);
-  border-radius: 32px 0px;
-  color: white;
+  color: var(--btn-text-color);
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  box-shadow:
-    0 0 0 2px var(--bg-color),
-    0 0 0 6px var(--text-color);
 }
 .qr-container {
   display: none;
@@ -111,35 +107,22 @@ button {
 
 @media (min-width: 768px) {
   #splash-page {
-    --margin: 34px;
     justify-content: center;
   }
   .launch-button-container {
     height: 100%;
   }
-  #launch-button {
-    display: none;
-  }
-  #launch-button-text {
-    margin-bottom: 4vh;
-    position: absolute;
-    bottom: 0;
-  }
-  #launch-button-text > img {
-    height: 16vh;
-    max-height: 180px;
-    width: auto;
-  }
-  .inner-wrapper {
-    width: calc(100% - (2*var(--margin)) - (2*var(--border-width)));
-    height: calc(100% - (2*var(--margin)) - (2*var(--border-width)));
-    margin: var(--margin);
-  }
+  #launch-button,
+  #launch-button-text,
   .inner-wrapper::before,
   .inner-wrapper::after {
-    height: 14%;
-    max-height: 144px;
+    display: none;
   }
+  .inner-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
   .qr-container {
     font-family: sans-serif;
     display: flex;
@@ -156,9 +139,10 @@ button {
   }
   .qr-container p {
     font-size: 20px;
-    font-weight: 400;
-    line-height: 84.5%;
-    margin: 0 0 40px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 40px;
+    margin-top: 0;
     position: relative;
   }
   .qr-container img {
@@ -171,7 +155,11 @@ button {
     display: none;
   }
 }
-  
+@media (min-width: 1600px) {
+  #splash-page {
+    background: center / cover no-repeat url('./assets/svg/background.svg');
+  }
+}
 /* ==========================================================================
   Below are style rules for the loading state
   ========================================================================== */
@@ -234,7 +222,7 @@ button {
   margin: 0 auto;
   width: 15%;
   height: 15%;
-  background-color: #40392D;
+  background-color: white;
   border-radius: 100%;
   -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
   animation: sk-circleFadeDelay 1.2s infinite ease-in-out both
@@ -469,7 +457,7 @@ button {
   text-align: center;
   max-width: calc(100% - 150px);
   opacity: .8;
-  color: black;
+  color: var(--text-color);
 }
 
 #cookie-title {
@@ -488,7 +476,7 @@ button {
 #privacy>a {
   font-family: sans-serif;
   font-size: 11px;
-  color: black;
+  color: var(--text-color);
   text-decoration: underline;
   cursor: pointer
 }

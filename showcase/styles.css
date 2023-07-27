@@ -108,6 +108,7 @@ button {
 @media (min-width: 768px) {
   #splash-page {
     justify-content: center;
+    background: center / cover no-repeat url('./assets/svg/background.svg');
   }
   .launch-button-container {
     height: 100%;
@@ -153,11 +154,6 @@ button {
   #cookie-notice,
   #privacy {
     display: none;
-  }
-}
-@media (min-width: 1600px) {
-  #splash-page {
-    background: center / cover no-repeat url('./assets/svg/background.svg');
   }
 }
 /* ==========================================================================
